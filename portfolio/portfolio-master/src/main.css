@@ -1,0 +1,32 @@
+@charset 'UTF-8';
+
+/* variables.scss */
+:root {
+  --primary-color: #333;
+}
+
+/* base/base.scss */
+body {
+  font-family: Arial, sans-serif;
+  color: var(--primary-color);
+}
+
+/* mixins.scss */
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* components/button.scss */
+.btn {
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* pages/home.scss */
+.home {
+  text-align: center;
+}

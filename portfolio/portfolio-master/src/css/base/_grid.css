@@ -1,0 +1,17 @@
+.row {
+    max-width: 114rem;
+    margin: 0 auto;
+    /* clearfix mixin equivalent: clearing floats */
+    clear: both;
+}
+
+@media (min-width: 768px) {
+    .row {
+        display: table;
+    }
+
+    [class^='col-'] {
+        width: calc(50% - var(--gutter-vertical)); /* Assuming --gutter-vertical is a custom property */
+        float: left;
+    }
+}
